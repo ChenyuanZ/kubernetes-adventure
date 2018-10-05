@@ -26,3 +26,7 @@ AKA, Kubernetes networking model, which might be SDN. Kubernetes does not provid
 * Romana
 * Weave Net
 * Jaguar
+
+## Reference
+
+* https://kubernetes.io/docs/concepts/cluster-administration/networking/
