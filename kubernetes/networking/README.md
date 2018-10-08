@@ -1,3 +1,13 @@
+# Overview
+
+There are four types of Kubernetes networking:
+
+* Highly-coupled container-to-container communications: this is solved by pods and localhost communications
+* Pod-to-Pod communications 
+* Pod-to-Service communications: this is covered by services.
+* External-to-Service communications: this is covered by services.
+
+
 # Concepts
 
 * **BGP (Border Gateway Protocol)**: a standardized exterior gateway protocol designed to exchange routing and reachability information among autonomous systems (AS) on the Internet.
