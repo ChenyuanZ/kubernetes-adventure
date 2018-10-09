@@ -2,10 +2,10 @@
 
 There are four types of Kubernetes networking:
 
-* Highly-coupled container-to-container communications: this is solved by pods and localhost communications
-* Pod-to-Pod communications 
-* Pod-to-Service communications: this is covered by services.
-* External-to-Service communications: this is covered by services.
+* **Highly-coupled container-to-container communications**: this is solved by pods and localhost communications
+* **Pod-to-Pod communications**
+* **Pod-to-Service communications**: this is covered by [services](../object/service/README.md).
+* **External-to-Service communications**: this is covered by [services](../object/service/README.md).
 
 
 # Concepts
@@ -13,6 +13,7 @@ There are four types of Kubernetes networking:
 * **BGP (Border Gateway Protocol)**: a standardized exterior gateway protocol designed to exchange routing and reachability information among autonomous systems (AS) on the Internet.
 * **CNI (Container Networking Interface)** https://github.com/containernetworking/cni
 * **Hypervisor**
+* **IPVS**: IP Virtual Server.
 * **Linux bridge (`cbr0`)**
 * **Load-balancer**
 * **Logical router**
@@ -24,3 +25,16 @@ There are four types of Kubernetes networking:
 * **Stateful ACLs**
 * **Underlay network**: physical infrastructure above which overlay network is built. It is the underlying network responsible for delivery of packets across networks. https://ipwithease.com/difference-between-underlay-network-and-overlay-network/
 * **vSwitch**
+
+
+# FAQ
+
+## What's the difference between an overlay network and SDN?
+
+A software-defined network can be deployed as an overlay network to a physical network or natively as the primary network to improve flexibility.
+
+https://searchsdn.techtarget.com/answer/What-is-the-difference-between-an-overlay-network-and-SDN
+
+## What is the difference among Cluster IP, xxx, and xxx?
+
+TODO

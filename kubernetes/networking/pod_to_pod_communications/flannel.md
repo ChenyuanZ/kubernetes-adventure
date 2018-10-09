@@ -30,6 +30,8 @@ FLANNEL_IPMASQ=true
 
 [ Quote from https://blog.laputa.io/kubernetes-flannel-networking-6a1cb1f8ec7c ]
 
+![image](kubernetes_flannel_networking.png)
+
 AWS VPC network: all instances are in one VPC subnet 172.20.32.0/19. They have been assigned ip addresses in this range, all hosts can connect to each other because they are in same LAN.
 
 Flannel overlay network: flannel has created another network 100.96.0.0/16, it’s a bigger network which can hold 2¹⁶(65536) addresses, and it’s across all kubernetes nodes, each pod will be assigned one address in this range, later we will see how flannel achieves this.
