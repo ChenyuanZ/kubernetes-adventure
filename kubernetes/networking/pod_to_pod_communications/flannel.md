@@ -2,8 +2,6 @@
 
 Flannel is a simple and easy way to configure a layer 3 IPv4 network fabric designed for Kubernetes. It only takes care of host to host traffic, not container traffic. But Flannel provides CNI plugin for Kubernets and Docker.
 
-*Layer 1 IPv4 network is public IP. Layer 2 IPv4 network is VPC network.*
-
 * `flanneld` allocate subnet for each node.
 * Stores configuration in Kubernetes API or `etcd`.
 * Flannel uses linux bridge `cbr0`.
