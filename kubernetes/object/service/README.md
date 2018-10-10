@@ -7,6 +7,10 @@ A Kubernetes `Service` is an abstraction which defines a logical set of `Pods` a
 * For Kubernetes-native applications, Kubernetes offers a simple **[Endpoints](../endpoint/README.md) API** that is updated whenever the set of `Pods` in a `Service` changes.
 * For non-native applications, Kubernetes offers a **virtual-IP-based bridge** (through [`kube-proxy`](../../component/kube_proxy.md)) to `Services` which redirects to the backend `Pods`.
 
+  <a href="http://www.youtube.com/watch?feature=player_embedded&v=RXNKhKJxRL8
+  " target="_blank"><img src="http://img.youtube.com/vi/RXNKhKJxRL8/0.jpg" 
+  alt="virtual-IP-based bridge demo" width="240" height="180" border="10" /></a>
+
 
 ## Discovering services
 
