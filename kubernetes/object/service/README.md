@@ -8,6 +8,13 @@ A Kubernetes `Service` is an abstraction which defines a logical set of `Pods` a
 * For non-native applications, Kubernetes offers a **virtual-IP-based bridge** (through [`kube-proxy`](../../component/kube_proxy.md)) to `Services` which redirects to the backend `Pods`.
 
 
+## Discovering services
+
+* **Environment variables**: This does imply an ordering requirement - any `Service` that a `Pod` wants to access must be created before the `Pod` itself, or else the environment variables will not be populated.
+* **DNS**
+
+
+
 # Concetps
 
 * **ClusterIP**
