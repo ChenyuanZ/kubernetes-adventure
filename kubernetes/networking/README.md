@@ -29,6 +29,13 @@ There are four types of Kubernetes networking:
 * **vSwitch**
 
 
+# Useful Linux Commands
+
+* `nslookup [HOST] [SERVER]`
+* `ip route get [SERVER]`
+* `ip addr`
+* `tcpdump -i vethe5952c7 dst host [SERVER]`
+
 # FAQ
 
 ## What's the difference between an overlay network and SDN?

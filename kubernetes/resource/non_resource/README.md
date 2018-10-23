@@ -1,0 +1,3 @@
+# Non-resource endpoints
+
+* `/healthz`
