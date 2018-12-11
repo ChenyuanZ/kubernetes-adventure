@@ -1,7 +1,7 @@
 # Useful Commands
 
 * `kubectl <command> <resource> <options>`
-* `kubectl <command> --help`
+* `kubectl <command> [--help | -h]`
 * `kubectl explain <object>`
 * `kubectl explian <object>.<sub-object>`: e.g. `kubectl explain po.spec.volumes`
 * `kubectl explain <object> --recursive`
@@ -9,7 +9,12 @@
 * `kubectl run redis-deploy --image=redis [--dry-run]`: to get a template
 * `kubectl get all [--all-namespaces]`
 * `kubectl describe all [--all-namespaces]`
-* `kubectl exec -it <pod> [-c <container>] [/bin/bash | /bin/sh | bash]`
+* `kubectl exec -it <pod> [-c <container>] [/bin/bash | /bin/sh | bash | sh]`
+* `kubectl rollout history deploy/<deploy> --revision=<revision>`
+* `kubectl get po -w`
+* `kubectl describe quota -n <namespace>`
+* `kubectl describe nodes`
+* `kubectl logs [-f] [--previous]`
 
 
 # Concepts

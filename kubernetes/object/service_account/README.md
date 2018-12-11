@@ -13,6 +13,8 @@ metadata:
   namespace: default
 ```
 
+To use a `serviceaccount`, specify `pod.spec.serviceAccountName`.
+
 
 # Reference
 

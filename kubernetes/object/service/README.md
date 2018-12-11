@@ -27,6 +27,13 @@ A Kubernetes `Service` is an abstraction which defines a logical set of `Pods` a
 
 * `ClusterIP`: Exposes the service on a cluster-internal IP. Choosing this value makes the service only reachable from within the cluster. This is the default `ServiceType`.
 * `NodePort`: Exposes the service on each Node’s IP at a static port (the `NodePort`). A `ClusterIP` service, to which the `NodePort` service will route, is automatically created. You’ll be able to contact the `NodePort` service, from outside the cluster, by requesting `<NodeIP>:<NodePort>`.
+  * `service.spec.ports.nodePort`: a static port assigned on each node. Usually assigned by the system. To access from outside cluster: `$(minikube ip):<nodePort>`.
+  * `service.spec.ports.port`: a port exposed internally in the cluster. To access from inside cluster:
+    * `<clusterIP>:<port>`
+    * `<service>.namespace.svc.cluster.local:<port>`
+  * `service.spec.ports.targetPort`: the container port to send request to.
+    * To access from inside same pod: `localhost:<targetPort>`
+    * To access from insdie cluster: `$(kubectl describe pod <pod-name> | grep IP | sed -E 's/IP:[[:space:]]+//'):<targetPort>`
 * `LoadBalancer`: Exposes the service externally using a cloud provider’s load balancer. `NodePort` and `ClusterIP` services, to which the external load balancer will route, are automatically created.
 * `ExternalName`: Maps the service to the contents of the externalName field (e.g. foo.bar.example.com), by returning a CNAME record with its value. No proxying of any kind is set up. This requires version 1.7 or higher of `kube-dns`.
 

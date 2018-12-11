@@ -13,6 +13,7 @@ The Kubernetes network proxy runs on each node. This reflects `services` as defi
 * ipvs proxy
 * userspace proxy
 
+`kube-proxy` enables Kubernetes nodes to communicate with other services in the cluster and the master node. It is responsible for routing network traffic to the relevant container and other networking operations.
 
 # Proxy Mode [3]
 
