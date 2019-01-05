@@ -6,7 +6,12 @@
 * `kubectl explian <object>.<sub-object>`: e.g. `kubectl explain po.spec.volumes`
 * `kubectl explain <object> --recursive`
 * `kubectl get <resource> -o yaml --export`
-* `kubectl run redis-deploy --image=redis [--dry-run]`: to get a template
+* `kubectl run busybox --image=busybox --restart=Never --dry-run -o yaml > pod.yaml`
+* `kubectl run busybox --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -c 'echo hello; sleep 5; echo world' > pod.yaml`
+* `kubectl run busybox --image=busybox --replicas=3 --dry-run -o yaml > deploy.yaml`
+* `kubectl run busybox --image=busybox --restart=OnFailure --dry-run -o yaml > job.yaml`
+* `kubectl run busybox --image=busybox --restart=OnFailure --schedule='*/5 * * * *' --dry-run -o yaml > cronjob.yaml`
+* `kubectl expose deploy busybox --port=80 --targetPort=8080 --dry-run -o yaml > svc.yaml`
 * `kubectl get all [--all-namespaces]`
 * `kubectl describe all [--all-namespaces]`
 * `kubectl exec -it <pod> [-c <container>] [/bin/bash | /bin/sh | bash | sh]`
