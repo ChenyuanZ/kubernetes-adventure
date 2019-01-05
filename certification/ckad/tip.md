@@ -33,3 +33,15 @@ Use Custom Command to keep container running for investigation.
   * (press `$` if you want to append to the end)
   * hit `Shift` + `i` and type the text you want to insert
   * Hit `Esc`, wait 1 second and the inserted text will appear on every line.
+
+
+## tmux
+* create session: `tmux new -s foo`
+* detach session: `tmux detach`
+* attach session: `tmux attach -t foo`
+* list session: `tmux ls`
+* kill session: `tmux kill-session -t foo`
+
+
+# Reference
+* http://hyperpolyglot.org/multiplexers
