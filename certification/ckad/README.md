@@ -6,8 +6,9 @@ I passed the exam with a score of 87% (66% is required to pass the exam). Below 
 
 1. Exercise: https://github.com/dgkanatsios/CKAD-exercises
 2. Book: https://matthewpalmer.net/kubernetes-app-developer/#purchase-the-ebook
-3. [Kubectl reference](kubectl.md)
-4. [Linux command reference](tip.md)
+3. Reading: https://github.com/walidshaari/Kubernetes-Certified-Administrator/blob/master/README-ckad.md
+4. [Kubectl reference](kubectl.md)
+5. [Linux command reference](tip.md)
 
 My overall experience is that time is very precious during the exam. I ran out of time and didn't finish 3 questions. Even though one can open a chrome tab to `kubernetes.io` subdomain, I highly recommend to memorize most concepts and commands because of time constrain.
 
