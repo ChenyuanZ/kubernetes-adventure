@@ -11,7 +11,7 @@ To specify `namespace`, simply run `kubectl <cmd> -n <namespace>`, or `kubectl c
 
 ## Label
 
-Labels are defined in `pod.metadata.labels` (slightly varies for `Deployment`, `Service`, and etc). Labels are meat to be precise. They are indexed and stored as hashmap.
+Labels are defined in `pod.metadata.labels` (slightly varies for `Deployment`, `Service`, and etc). Labels are meant to be precise. They are indexed and stored as hashmap.
 
 
 # Selector
