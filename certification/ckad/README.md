@@ -15,4 +15,4 @@ In addition, most people reocommended using tmux and vim shortcuts, I didn't rea
 
 Good luck!
 
-![certificate][certificate.png]
+![certificate](certificate.png)
