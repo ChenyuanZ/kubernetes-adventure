@@ -29,7 +29,7 @@ To override image entrypoints:
 ## Multi-container Pod
 
 When to use multi-container `pod`:
-* Containers have the exact lifecycle.
+* Containers have the exact same lifecycle.
 * Containers share filesystem resources.
 * Containers must run on the same node.
 * Simplify container communication:
