@@ -15,5 +15,3 @@ My overall experience is that time is very precious during the exam. I ran out o
 In addition, most people reocommended using tmux and vim shortcuts, I didn't really need them.
 
 Good luck!
-
-![certificate](certificate.png)
